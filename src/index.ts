@@ -1,4 +1,5 @@
-import { workWeekDays } from "./Singleton";
+import SingletonPattern from "./Singleton";
+import StrategyPattern from "./Strategy";
 
-// Singleton
-console.log('Singleton example:',workWeekDays.getDays());
+SingletonPattern();
+StrategyPattern();

@@ -1,4 +1,8 @@
-
 import { WorkWeekDays } from "./example";
 
-export const workWeekDays = WorkWeekDays.getInstance("en");
+const SingletonPattern = () => {
+  const workWeekDays = WorkWeekDays.getInstance("en");
+  console.log("Singleton example:", workWeekDays.getDays());
+};
+
+export default SingletonPattern;
