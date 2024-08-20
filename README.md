@@ -4,7 +4,7 @@
 ![Singleton](images/singleton.png)
 
 ## Strategy
-![Strategy](images/strategy.png)
+![Strategy](images/Strategy.png)
 
 ## Observer
 ![Observer](images/observer.png)
