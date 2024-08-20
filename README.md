@@ -5,3 +5,6 @@
 
 ## Strategy
 ![Strategy](images/strategy.png)
+
+## Observer
+![Observer](images/observer.png)
