@@ -18,7 +18,7 @@ const StrategyPattern = () => {
 
   sale.setStrategy(foreignSale);
   const foreign = sale.calculate(10);
-  console.log("|Strategy|:", { regular, discount, foreign });
+  console.log("|Strategy |:", { regular, discount, foreign });
 };
 
 export default StrategyPattern;

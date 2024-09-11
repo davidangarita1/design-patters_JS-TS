@@ -5,7 +5,6 @@ import DecoratorPattern from "./Decorator";
 import BuilderPattern from "./Builder";
 
 console.log("Examples:");
-
 SingletonPattern();
 StrategyPattern();
 ObserverPattern();

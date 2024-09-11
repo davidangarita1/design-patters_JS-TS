@@ -10,7 +10,7 @@ const BuilderPattern = () => {
     .setCity("Medellin")
     .addHobbies("Guitarra")
     .build();
-  console.log("|Builder|:", hector);
+  console.log("|Builder  |:", JSON.stringify(hector));
 };
 
 export default BuilderPattern;
