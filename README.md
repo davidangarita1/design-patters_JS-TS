@@ -8,3 +8,9 @@
 
 ## Observer
 ![Observer](images/observer.png)
+
+## Decorator
+![Decorator](images/decorator.png)
+
+## Builder
+![Builder](images/builder.png)
