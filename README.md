@@ -14,3 +14,6 @@
 
 ## Builder
 ![Builder](images/builder.png)
+
+## State
+![State](images/state.png)

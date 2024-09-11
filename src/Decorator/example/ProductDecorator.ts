@@ -1,14 +1,14 @@
-import { ProductComponent } from "./ProductComponent";
+import { Component } from "./IComponent";
 
-class ProductDecorator {
-  private productComponent: ProductComponent;
+abstract class ProductDecorator implements Component {
+  protected component: Component;
 
-  constructor(productComponent: ProductComponent) {
-    this.productComponent = productComponent;
+  constructor(component: Component) {
+    this.component = component;
   }
 
-  getDetail() {
-    return this.productComponent.getDetail();
+  public getDetail(): string {
+    return this.component.getDetail();
   }
 }
 
@@ -16,18 +16,14 @@ export class CommercialInfoProductDecorator extends ProductDecorator {
   private tradename: string;
   private brand: string;
 
-  constructor(
-    productComponent: ProductComponent,
-    tradename: string,
-    brand: string
-  ) {
-    super(productComponent);
+  constructor(component: Component, tradename: string, brand: string) {
+    super(component);
 
     this.tradename = tradename;
     this.brand = brand;
   }
 
-  getDetail(): string {
+  public getDetail(): string {
     return `${this.tradename} ${this.brand} ${super.getDetail()}`;
   }
 }
@@ -35,13 +31,21 @@ export class CommercialInfoProductDecorator extends ProductDecorator {
 export class StoreProductDecorator extends ProductDecorator {
   private price: number;
 
-  constructor(productComponent: any, price: number) {
-    super(productComponent);
+  constructor(component: Component, price: number) {
+    super(component);
 
     this.price = price;
   }
 
   getDetail(): string {
     return `${super.getDetail()}: $ ${this.price}`;
+  }
+}
+
+export class HTMLProductDecorator extends ProductDecorator {
+  public getDetail(): string {
+    return `
+    <h1>Información del producto</h1>
+    <p>${super.getDetail()}</p>`;
   }
 }
