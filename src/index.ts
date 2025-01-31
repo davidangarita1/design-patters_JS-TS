@@ -4,7 +4,8 @@ import ObserverPattern from "./Observer";
 import DecoratorPattern from "./Decorator";
 import BuilderPattern from "./Builder";
 import StatePattern from "./State";
- 
+import BridgePattern from "./Bridge";
+
 console.log("Examples:");
 SingletonPattern();
 StrategyPattern();
@@ -12,3 +13,4 @@ ObserverPattern();
 DecoratorPattern();
 BuilderPattern();
 StatePattern();
+BridgePattern();
